@@ -33,13 +33,27 @@ lerna-debug.log
 .env.production.local
 
 # NestJS specific
-/backend/tmp/
+/backend/.nestjs/
+backend/node_modules/
+backend/dist/
+backend/tmp/
+/backend/.env
+/backend/.env.local
+/backend/.env.*.local
 /backend/nest-cli.json
+
+# Generated files by NestJS CLI
+/backend/.nestjs.json
+/backend/migrations/
+
+# TypeScript build files
+/backend/**/*.tsbuildinfo
 
 # Next.js specific
 /frontend/.vercel/
+frontend/.next/
+frontend/.turbo/
 /frontend/.firebase/
-/frontend/.turbo/
 
 # TypeScript build files
 *.tsbuildinfo
@@ -47,3 +61,11 @@ lerna-debug.log
 # MacOS system files
 ._*
 Thumbs.db
+
+# Additional temporary files
+*.swp
+*.swo
+*.bak
+*.tmp
+*.gz
+*.gz.old
