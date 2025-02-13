@@ -1,0 +1,17 @@
+{
+  "name": "my-fullstack-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run start:dev -w backend\" \"npm run dev -w frontend\"",
+    "build": "npm run build -w backend && npm run build -w frontend",
+    "start": "concurrently \"npm run start -w backend\" \"npm run start -w frontend\""
+  },
+  "workspaces": ["backend", "frontend"],
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
