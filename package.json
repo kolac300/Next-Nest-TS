@@ -7,9 +7,15 @@
     "build": "npm run build -w backend && npm run build -w frontend",
     "start": "concurrently \"npm run start -w backend\" \"npm run start -w frontend\""
   },
-  "workspaces": ["backend", "frontend"],
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
   "dependencies": {
-    "concurrently": "^7.0.0"
+    "concurrently": "^7.0.0",
+    "dotenv": "^16.4.7",
+    "next-auth": "^4.24.11",
+    "react-google-button": "^0.8.0"
   },
   "engines": {
     "node": ">=18.0.0"
